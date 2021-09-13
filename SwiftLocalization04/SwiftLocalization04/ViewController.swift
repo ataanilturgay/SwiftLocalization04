@@ -17,18 +17,17 @@ class ViewController: UIViewController {
                                                width: 100,
                                                height: 40))
         helloLabel.textColor = .black
-        helloLabel.text = "hello_message".localized(with: "")
+        helloLabel.text = "hello_message".localized()
         self.view.addSubview(helloLabel)
     }
 }
 
 
 extension String {
-    func localized(with comment: String = "") -> String {
+
+    func localized(withComment comment: String? = nil) -> String {
         return NSLocalizedString(self,
                                  tableName: "StringTable",
-                                 bundle: Bundle.main,
-                                 value: "",
-                                 comment: comment)
+                                 comment: comment ?? "")
     }
 }
