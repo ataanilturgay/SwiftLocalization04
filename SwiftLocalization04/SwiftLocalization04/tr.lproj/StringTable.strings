@@ -1,0 +1,9 @@
+/* 
+  StringTable.strings
+  SwiftLocalization04
+
+  Created by Ata Anıl Turgay on 14.09.2021.
+  
+*/
+
+"hello_message" = "Merhaba";
